@@ -1,0 +1,11 @@
+[project]
+name = "resume-builder"
+version = "0.1.0"
+description = "Multilingual CV manager & builder powered by RenderCV and Typst"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.12.5",
+    "pyyaml>=6.0.3",
+    "rendercv[full]>=2.6",
+]

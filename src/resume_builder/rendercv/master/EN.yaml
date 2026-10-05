@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: John Doe
+  headline: "Senior Backend Engineer | Distributed Systems, Cloud Architecture & Observability"
+  location: "San Francisco, CA, USA"
+  email: "john.doe@example.com"
+  photo: "../../img/portrait.jpg"
+  phone: "+1 415 555 0192"
+  website: # https://example.com/
+  social_networks:
+    - network: LinkedIn
+      username: johndoe-example
+    - network: GitHub
+      username: johndoe-example
+    - network: Telegram
+      username: "@johndoe_example"
+  custom_connections:
+  sections:
+    About:
+      - >
+        Senior Backend Engineer with a strong systems background in designing fault-tolerant distributed systems,
+        high-throughput APIs, and asynchronous data processing pipelines.
+        Specialized in Python (Asyncio, FastAPI), resilience architectural patterns (Backpressure, Graceful Degradation),
+        and end-to-end observability (Prometheus, OpenTelemetry, Grafana).
+        Passionate about clean code, robust system design, and building infrastructure that scales smoothly under load.
+
+    Experience:
+      - company: Acme Cloud Analytics Inc.
+        position: "Senior Backend / Distributed Systems Engineer"
+        start_date: 2022
+        end_date: present
+        location: San Francisco, CA (Remote)
+        summary: Development of core backend services and event-driven data streaming platform.
+        highlights:
+          - "Microservice Architecture: engineered asynchronous backend services in FastAPI/Python processing 50M+ requests daily."
+          - "Data Integrity & Anti-Abuse: designed and deployed real-time validation pipelines reducing fraudulent traffic and bot requests by 45%."
+          - "Distributed Storage: optimized real-time sync and data transformation across PostgreSQL, ClickHouse, and Redis."
+          - "Observability & SLA: configured structured telemetry and latency dashboards, reducing mean-time-to-recovery (MTTR) by 35%."
+
+      - company: Global Tech Solutions LLC
+        position: "Software & Automation Engineer | Tech Lead"
+        start_date: 2019
+        end_date: 2022
+        location: Austin, TX
+        summary: Engineering software development, data pipelines automation, and cloud infrastructure deployment.
+        highlights:
+          - "Data Pipelines: developed Python ETL pipelines for automated auditing and data reconciliations, processing terabytes of transactional records."
+          - "Process Automation: created a suite of internal CLI tools and automated integration workflows, cutting release cycle times by 40%."
+          - "Edge Networking: architected secure VPN tunneling, custom routing tables, and load balancing across multi-region server clusters."
+          - "Quality Assurance: introduced automated data verification and comprehensive test suites, increasing build reliability to 99.8%."
+
+      - company: Precision Systems Corp
+        position: Systems Engineer
+        start_date: 2017
+        end_date: 2019
+        location: Seattle, WA
+        summary: Systems monitoring and performance optimization for critical production infrastructure.
+        highlights:
+          - "Telemetry & Incident Response: managed 24/7 telemetry monitoring of critical services with early diagnostic alerting."
+          - "High-Reliability Standards: adhered to strict high-availability SLA compliance and disaster recovery protocols."
+
+    Projects:
+      - name: "[Distributed Event Ingestion Platform (Open Source)](https://github.com/example/event-ingestion-platform)"
+        summary: High-throughput event ingestion and stream buffering service (FastAPI, RabbitMQ, Redis).
+        highlights:
+          - "Clean Architecture: designed according to 12-Factor principles, domain-driven design, and non-blocking I/O."
+          - "Resilience & Flow Control: implemented Dead-Letter Queues (DLQ), exponential backoff retries, and rate limiting."
+
+      - name: High-Frequency Data Aggregator
+        summary: Low-latency telemetry and market data processing pipeline (100ms streaming interval).
+        highlights:
+          - "Storage Tuning: hybrid storage scheme (TimescaleDB + Parquet) with optimized disk I/O and batch flushing."
+          - "Full Observability: comprehensive metric, log, and trace instrumentation with OpenTelemetry and Grafana dashboards."
+
+    Skills:
+      - label: Backend & Architecture
+        details: Python (Asyncio, FastAPI), Event-Driven Architecture, Pydantic, SQLAlchemy, Redis, Celery, REST, WebSockets
+      - label: Data & Databases
+        details: PostgreSQL, ClickHouse, Redis, RabbitMQ, TimescaleDB, MongoDB, Apache Parquet
+      - label: Observability & Reliability
+        details: Prometheus, VictoriaMetrics, Vector, OpenTelemetry, Grafana, Structured Logging, Distributed Tracing
+      - label: DevOps & Infrastructure
+        details: Docker, Docker Compose, Linux Admin, CI/CD (GitHub Actions), Bash, Nginx, Networking (TCP/IP, DNS)
+
+    Education:
+      - institution: State University of Technology
+        area: Computer Science & Software Engineering
+        degree: Bachelor of Science
+        start_date: 2013
+        end_date: 2017
+        location: Seattle, WA
+        highlights:
+          - "Focus: Distributed algorithms, database systems, computer networking, and operating systems."
+
+    Languages:
+      - bullet: "**English:** Native / Professional"
+      - bullet: "**Spanish:** Professional working proficiency"
+      - bullet: "**German:** Elementary"
+
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 0.55in
+    bottom_margin: 0.55in
+    left_margin: 0.55in
+    right_margin: 0.55in
+    show_footer: true
+    show_top_note: true
+  section_titles:
+    type: with_partial_line
+    space_above: 0.35cm
+    space_below: 0.18cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.75em
+    space_between_text_based_entries: 0.2em
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        **DEGREE**, AREA
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**, POSITION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+  typography:
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+
+locale:
+  language: english
+
+settings:
+  current_date: '2026-04-27'

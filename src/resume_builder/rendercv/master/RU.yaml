@@ -1,0 +1,147 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Иван Иванов
+  headline: "Senior Python Backend Engineer | Распределенные системы, Архитектура и Observability"
+  location: "Москва, Россия"
+  email: "ivan.ivanov@example.com"
+  photo: "../../img/portrait.jpg"
+  phone: "+7 (999) 000-00-00"
+  website: # https://example.com/
+  social_networks:
+    - network: LinkedIn
+      username: ivan-ivanov-sample
+    - network: GitHub
+      username: ivan-ivanov-sample
+    - network: Telegram
+      username: "@ivan_ivanov_sample"
+  custom_connections:
+  sections:
+    О себе:
+      - >
+        Senior Backend Engineer с глубоким инженерным бэкграундом в проектировании отказоустойчивых архитектур,
+        высоконагруженных API и асинхронных конвейеров обработки данных.
+        Специализируюсь на Python (Asyncio, FastAPI), архитектурных паттернах надежности (Backpressure, Graceful Degradation)
+        и сквозной наблюдаемости (Prometheus, VictoriaMetrics, Vector, Grafana).
+        Использую инженерное мышление и понимание Linux/сетей для создания серверных систем,
+        стабильно работающих в продакшене под высокими нагрузками.
+
+    Опыт:
+      - company: ООО «Платформа Данных»
+        position: "Senior Python Backend / Data Engineer"
+        start_date: 2022
+        end_date: present
+        location: Удаленно
+        summary: Разработка бэкенд-сервисов и инфраструктуры обработки данных аналитической платформы.
+        highlights:
+          - "Микросервисная архитектура: разработал асинхронные бэкенд-сервисы на FastAPI/Python для обработки 50M+ событий в сутки."
+          - "Data Cleaning & Anti-fraud: спроектировал и внедрил алгоритмы фильтрации невалидных данных, сократив фрод-трафик на 45%."
+          - "Data Pipelines & Storage: настроил потоковую синхронизацию и трансформацию данных между PostgreSQL, ClickHouse и Redis."
+          - "Observability & SLA: настроил метрики производительности эндпоинтов и структурированное логирование, сократив MTTR на 35%."
+
+      - company: АО «Промышленные Технологии»
+        position: "Software & Automation Engineer | Tech Lead"
+        start_date: 2019
+        end_date: 2022
+        location: Санкт-Петербург, Россия
+        summary: Разработка инженерного ПО, автоматизация обработки данных и развертывание инфраструктуры.
+        highlights:
+          - "Data Audit & Parsing: разработал комплекс скриптов на Python для автоматизированного аудита спецификаций больших объемов данных."
+          - "Process Automation: спроектировал библиотеку внутренних CLI-утилит и модулей интеграции, ускорив выпуск документации на 40%."
+          - "Edge Infrastructure: развернул и администрировал автономные серверные узлы; настроил отказоустойчивые VPN-туннели."
+          - "Reliability & Quality: внедрил автоматизированную валидацию данных и автотесты, доведя надежность релизов до 99.8%."
+
+      - company: ПАО «ЭнергоСистемы»
+        position: Инженер систем управления / Оператор оборудования
+        start_date: 2017
+        end_date: 2019
+        location: Иркутск, Россия
+        summary: Оперативный мониторинг непрерывных технологических процессов критической инфраструктуры.
+        highlights:
+          - "Telemetry & Incident Response: непрерывный мониторинг технологических параметров в режиме 24/7, ранняя диагностика сбоев."
+          - "Mission-Critical Standards: практический опыт соблюдения регламентов отказоустойчивости и требований повышенной надежности."
+
+    Проекты:
+      - name: "[Event Ingestion Platform (Open Source)](https://github.com/example/event-ingestion-platform)"
+        summary: Высокопроизводительная платформа приема событий и буферизации (FastAPI, RabbitMQ, Redis).
+        highlights:
+          - "Архитектура: спроектирована по принципам 12-Factor App, Clean Architecture и неблокирующего ввода-вывода."
+          - "Resilience & Flow Control: очереди сообщений с Dead-Letter Queue (DLQ), повторные попытки с экспоненциальной задержкой и Backpressure."
+
+      - name: Сканер рыночных данных высокой частоты
+        summary: Конвейер приема телеметрии и аналитики данных в реальном времени (интервал 100мс).
+        highlights:
+          - "Оптимизация хранения: гибридная схема хранения (TimescaleDB + Parquet) с оптимизацией дискового ввода-вывода."
+          - "Сквозная наблюдаемость: сбор телеметрии с VictoriaMetrics, Vector и дашбордами в Grafana."
+
+    Навыки:
+      - label: Бэкенд и Архитектура
+        details: Python (Asyncio, FastAPI), Event-Driven Architecture, Pydantic, SQLAlchemy, Redis, Celery, REST, WebSockets
+      - label: Данные и Хранилища
+        details: PostgreSQL, ClickHouse, Redis, RabbitMQ, TimescaleDB, MongoDB, Apache Parquet
+      - label: Наблюдаемость и Мониторинг
+        details: Prometheus, VictoriaMetrics, Vector, OpenTelemetry, Grafana, Структурированное логирование
+      - label: DevOps и Инфраструктура
+        details: Docker, Docker Compose, Администрирование Linux, CI/CD (GitHub Actions), Bash, Nginx, Сети (TCP/IP, DNS)
+
+    Образование:
+      - institution: Государственный технический университет
+        area: Программная инженерия и компьютерные науки
+        degree: Бакалавр прикладной информатики
+        start_date: 2013
+        end_date: 2017
+        location: Россия
+
+    Языки:
+      - bullet: "**Русский:** Родной"
+      - bullet: "**Английский:** Профессиональный рабочий (B2/C1)"
+      - bullet: "**Немецкий:** Базовый (A2)"
+
+design:
+  theme: engineeringclassic
+  page:
+    size: a4
+    top_margin: 0.55in
+    bottom_margin: 0.55in
+    left_margin: 0.55in
+    right_margin: 0.55in
+    show_footer: true
+    show_top_note: true
+  section_titles:
+    type: with_partial_line
+    space_above: 0.35cm
+    space_below: 0.18cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.75em
+    space_between_text_based_entries: 0.2em
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        **DEGREE**, AREA
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**, POSITION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+  typography:
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+
+locale:
+  language: russian
+
+settings:
+  current_date: '2026-04-27'

@@ -1,0 +1,146 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: John Doe
+  headline: "Senior Backend Engineer | Arquitectura Cloud, Sistemas Distribuidos y Observabilidad"
+  location: "Madrid, España"
+  email: "john.doe@example.com"
+  photo: "../../img/portrait.jpg"
+  phone: "+34 91 123 4567"
+  website: # https://example.com/
+  social_networks:
+    - network: LinkedIn
+      username: johndoe-example
+    - network: GitHub
+      username: johndoe-example
+    - network: Telegram
+      username: "@johndoe_example"
+  custom_connections:
+  sections:
+    Acerca de mí:
+      - >
+        Senior Backend Engineer con sólida trayectoria en el diseño de arquitecturas tolerantes a fallos,
+        APIs de alto rendimiento y pipelines asíncronos de procesamiento de datos.
+        Especializado en Python (Asyncio, FastAPI), patrones de resiliencia (Backpressure, Graceful Degradation)
+        y observabilidad integral (Prometheus, OpenTelemetry, Grafana).
+        Enfoque en código limpio, ingeniería de sistemas y escalabilidad en producción.
+
+    Experiencia:
+      - company: Acme Cloud Analytics Inc.
+        position: "Senior Backend / Data Engineer"
+        start_date: 2022
+        end_date: present
+        location: Remoto
+        summary: Desarrollo de microservicios y plataforma de datos orientada a eventos.
+        highlights:
+          - "Arquitectura de Microservicios: diseñé servicios asíncronos en FastAPI/Python procesando más de 50M de peticiones diarias."
+          - "Validación de Datos: implementé pipelines de filtrado y validación en tiempo real reduciendo tráfico no deseado en un 45%."
+          - "Almacenamiento Distribuido: sincronicé y transformé conjuntos de datos entre PostgreSQL, ClickHouse y Redis."
+          - "Observabilidad y SLA: configuré telemetría estructurada reduciendo el tiempo de resolución de incidentes (MTTR) en un 35%."
+
+      - company: Global Tech Solutions LLC
+        position: "Software & Automation Engineer | Tech Lead"
+        start_date: 2019
+        end_date: 2022
+        location: Austin, TX
+        summary: Desarrollo de software interno, automatización de flujos y despliegue de infraestructura.
+        highlights:
+          - "Pipelines de Datos: desarrollé scripts en Python para auditoría automatizada procesando terabytes de registros."
+          - "Automatización de Procesos: diseñé herramientas CLI y módulos de integración reduciendo tiempos de entrega en un 40%."
+          - "Redes y Servidores: configuré túneles VPN seguros y balanceo de carga en clústeres distribuidos."
+          - "Control de Calidad: implementé validación automatizada de datos alcanzando una fiabilidad del 99.8%."
+
+      - company: Precision Systems Corp
+        position: Ingeniero de Sistemas
+        start_date: 2017
+        end_date: 2019
+        location: Seattle, WA
+        summary: Monitorización de procesos continuos e infraestructura crítica.
+        highlights:
+          - "Telemetría y Monitorización: supervisión 24/7 de parámetros técnicos y diagnóstico temprano de fallos."
+          - "Estándares de Misión Crítica: cumplimiento estricto de normativas de alta disponibilidad y tolerancia a fallos."
+
+    Proyectos:
+      - name: "[Distributed Event Ingestion Platform (Open Source)](https://github.com/example/event-ingestion-platform)"
+        summary: Plataforma de ingesta de eventos y buffering asíncrono (FastAPI, RabbitMQ, Redis).
+        highlights:
+          - "Clean Architecture: diseño según principios 12-Factor y arquitectura hexagonal."
+          - "Resiliencia: gestión de colas de mensajes con Dead-Letter Queue (DLQ) y control de sobrecarga."
+
+      - name: Scanner de Datos de Alta Frecuencia
+        summary: Pipeline de telemetría y análisis en tiempo real (intervalo de 100ms).
+        highlights:
+          - "Almacenamiento Híbrido: integración de TimescaleDB y Parquet con I/O optimizado."
+          - "Telemetría Integral: dashboards en tiempo real con OpenTelemetry y Grafana."
+
+    Habilidades:
+      - label: Backend y Arquitectura
+        details: Python (Asyncio, FastAPI), Event-Driven Architecture, Pydantic, SQLAlchemy, Redis, Celery, REST, WebSockets
+      - label: Datos y Almacenamiento
+        details: PostgreSQL, ClickHouse, Redis, RabbitMQ, TimescaleDB, MongoDB, Apache Parquet
+      - label: Observabilidad
+        details: Prometheus, VictoriaMetrics, Vector, OpenTelemetry, Grafana, Logging Estructurado
+      - label: DevOps e Infraestructura
+        details: Docker, Docker Compose, Linux Admin, CI/CD (GitHub Actions), Bash, Redes (TCP/IP, DNS)
+
+    Educación:
+      - institution: Universidad Tecnológica Estatal
+        area: Ingeniería Informática y Software
+        degree: Grado en Ingeniería
+        start_date: 2013
+        end_date: 2017
+        location: Seattle, WA
+
+    Idiomas:
+      - bullet: "**Inglés:** Nativo / Profesional"
+      - bullet: "**Español:** Competencia profesional completa"
+      - bullet: "**Alemán:** Nivel básico"
+
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 0.55in
+    bottom_margin: 0.55in
+    left_margin: 0.55in
+    right_margin: 0.55in
+    show_footer: true
+    show_top_note: true
+  section_titles:
+    type: with_partial_line
+    space_above: 0.35cm
+    space_below: 0.18cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.75em
+    space_between_text_based_entries: 0.2em
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        **DEGREE**, AREA
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**, POSITION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+  typography:
+    font_family:
+      body: Source Sans 3
+      name: Source Sans 3
+      headline: Source Sans 3
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+
+locale:
+  language: spanish
+
+settings:
+  current_date: '2026-04-27'
