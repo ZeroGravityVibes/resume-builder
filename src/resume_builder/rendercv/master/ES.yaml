@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: John Doe
   headline: "Senior Backend Engineer | Arquitectura Cloud, Sistemas Distribuidos y Observabilidad"
@@ -96,7 +96,7 @@ cv:
       - bullet: "**Alemán:** Nivel básico"
 
 design:
-  theme: engineeringclassic
+  theme: ink
   page:
     size: us-letter
     top_margin: 0.55in
@@ -133,14 +133,14 @@ design:
         DATE
   typography:
     font_family:
-      body: Source Sans 3
-      name: Source Sans 3
-      headline: Source Sans 3
-      connections: Source Sans 3
-      section_titles: Source Sans 3
+      body: Exo 2
+      name: Exo 2
+      headline: Exo 2
+      connections: Exo 2
+      section_titles: Exo 2
 
 locale:
   language: spanish
 
 settings:
-  current_date: '2026-04-27'
+  current_date: '2026-10-13'
